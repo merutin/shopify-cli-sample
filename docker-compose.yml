@@ -1,0 +1,14 @@
+version: '3'
+services:
+  shopify:
+    build: .
+    ports:
+      - 3456:3456
+      - 80:80
+    volumes:
+      - './:/usr/src/app'
+      - './.config:/root/.config'
+    environment:
+      - STORE=xxx.myshopify.com
+    tty: true
+        #command: /bin/bash
