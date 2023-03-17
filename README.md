@@ -10,6 +10,7 @@ docker-compose.ymlはそっちの方が値の変更しやすかったからと�
 # 利用方法
 
 ```bash
+docker compose build
 docker compose run --rm shopify shopify init
 ```
 
